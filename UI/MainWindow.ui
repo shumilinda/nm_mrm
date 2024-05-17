@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>971</width>
+    <height>851</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Widget</string>
+  </property>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>40</y>
+     <width>951</width>
+     <height>801</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>1</number>
+   </property>
+   <widget class="QWidget" name="graph">
+    <attribute name="title">
+     <string>Оснавная</string>
+    </attribute>
+    <widget class="QWidget" name="plot" native="true">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>931</width>
+       <height>531</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QWidget" name="gridLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>580</y>
+       <width>781</width>
+       <height>211</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="le_n"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="l_m">
+        <property name="text">
+         <string>m:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="1">
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="le_S"/>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="l_S">
+        <property name="text">
+         <string>S:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QLineEdit" name="le_S_"/>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="l_eps">
+        <property name="text">
+         <string>eps:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="l_S_">
+        <property name="text">
+         <string>S':</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QLineEdit" name="le_eps"/>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="l_n">
+        <property name="text">
+         <string>n:</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="le_m"/>
+      </item>
+      <item row="6" column="2">
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item row="5" column="1">
+       <widget class="QLineEdit" name="le_eps_"/>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="l_eps_">
+        <property name="text">
+         <string>eps':</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QPushButton" name="b_plot">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>550</y>
+       <width>781</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Построить</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="b_delete">
+     <property name="geometry">
+      <rect>
+       <x>800</x>
+       <y>550</y>
+       <width>141</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Очистить</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="combo_task">
+     <property name="geometry">
+      <rect>
+       <x>800</x>
+       <y>600</y>
+       <width>141</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>Тестовая</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Основная</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="l_task">
+     <property name="geometry">
+      <rect>
+       <x>800</x>
+       <y>580</y>
+       <width>141</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Выбор задачи:</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tables">
+    <attribute name="title">
+     <string>Таблицы</string>
+    </attribute>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>921</width>
+       <height>781</height>
+      </rect>
+     </property>
+     <property name="currentIndex">
+      <number>1</number>
+     </property>
+     <widget class="QWidget" name="w_table_1">
+      <attribute name="title">
+        <string>Таблица 1</string>
+      </attribute>
+      <widget class="QTableWidget" name="table_1">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>901</width>
+         <height>721</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="w_table_2">
+      <attribute name="title">
+        <string>Таблица 2</string>
+      </attribute>
+      <widget class="QTableWidget" name="table_2">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>901</width>
+         <height>721</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="w_table_3">
+      <attribute name="title">
+        <string>Таблица 3</string>
+      </attribute>
+      <widget class="QTableWidget" name="table_3">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>901</width>
+         <height>721</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
